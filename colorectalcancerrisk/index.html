@@ -128,7 +128,7 @@
             </ol>
           </div>
           <div id="results"></div>
-          <form id="riskForm" method="POST" action="/colorectalcancerrisk/rest/calculate/">
+          <form id="riskForm" method="POST" action="/colorectalcancerrisk/rest/calculate/" autocomplete="off">
             <section id="demo-section">
               <h3 class="sectionTitle">Demographics</h3>
               <label class="questions" for="hispanic">Is the patient Hispanic or Latino?</label>
@@ -453,17 +453,15 @@
               But, because there is not as much data available for these groups, 
               your results may be less accurate.
             </p>
-            <p> 
-              In the future, we hope to make this tool more accurate for Hispanics/Latinos, 
-              as researchers complete studies that will provide information to update 
-              the tool for these groups.
-            </p>
+            <p>
+               In the future, we hope to make this tool more accurate for <i id="af-notice">African American, as researchers complete studies that will provide information to update </i><i id="hisp-notice">Hispanics/Latinos, as researchers complete studies that will provide information to update </i><i id="as-notice">Asian American or Pacific Islander, as researchers complete studies that will provide information to update </i>the tool for these groups.</p>
             <p> 
               Although the tool is not perfect, the information you learn from 
               using it can still help you and your doctor better understand 
               your risk of colorectal cancer.
             </p>
-            <button class="btn btn-primary" type="button" data-dismiss="modal">OK</button>
+            <div id="aa-notice"></div>
+            <button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
